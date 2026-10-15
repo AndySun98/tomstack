@@ -9,4 +9,5 @@ Promoted skills for software delivery and repository verification.
 ## Model-invoked
 
 - **[batch-grill-me](./batch-grill-me/SKILL.md):** Clarify consequential goal and spec decisions together before implementation.
+- **[app-canvas](./app-canvas/SKILL.md):** Connect real application pages and states to an interactive overview.
 - **[impact-aware-qa](./impact-aware-qa/SKILL.md):** Choose the smallest sufficient repository verification without losing correctness.

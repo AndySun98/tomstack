@@ -38,6 +38,14 @@
       "name": "orphan-reaper",
       "source": "./orphan-reaper",
       "description": "Kill orphan dev processes left by AI agent sessions"
+    },
+    {
+      "name": "app-canvas",
+      "source": {
+        "source": "github",
+        "repo": "tombelieber/app-canvas"
+      },
+      "description": "Interactive overview of real application pages, states and flows"
     }
   ]
 }

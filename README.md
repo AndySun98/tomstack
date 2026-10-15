@@ -46,6 +46,7 @@ npx skills@latest update <name>
 **Model-invoked**
 
 - **[batch-grill-me](./skills/engineering/batch-grill-me/SKILL.md):** Clarify consequential goal and spec decisions together before implementation.
+- **[app-canvas](./skills/engineering/app-canvas/SKILL.md):** Review real app pages, states and flows on one shared canvas.
 - **[impact-aware-qa](./skills/engineering/impact-aware-qa/SKILL.md):** Choose the smallest sufficient repository verification without losing correctness.
 
 ### Productivity
@@ -77,6 +78,7 @@ more than a skill:
 | [claude-backup](https://github.com/tombelieber/claude-backup) | Claude marketplace, npm | Claude Code backup and restore CLI |
 | [chatgpt-share-dump](https://github.com/tombelieber/chatgpt-share-dump) | Claude marketplace, GitHub | ChatGPT share archive CLI |
 | [pain-point-mining-agent](https://github.com/tombelieber/pain-point-mining-agent) | Claude marketplace, GitHub | Product-signal mining workflow |
+| [app-canvas](https://github.com/tombelieber/app-canvas) | GitHub CLI, Claude marketplace | Real app pages, states and flows on one canvas |
 | [orphan-reaper](./orphan-reaper/) | Claude marketplace, npm | Orphan development-process cleanup CLI |
 
 Install individual plugins from the same marketplace when you need their
