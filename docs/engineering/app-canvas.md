@@ -5,7 +5,7 @@ Use this skill to connect an application's actual pages and named states to one 
 The canvas engine lives in [tombelieber/app-canvas](https://github.com/tombelieber/app-canvas). This repository owns the canonical [skill](../../skills/engineering/app-canvas/SKILL.md); the standalone tool carries a compatibility snapshot for its installer.
 
 ```sh
-npm install -g github:tombelieber/app-canvas#v0.1.0
+npm install -g github:tombelieber/app-canvas#v0.1.1
 app-canvas install --target both
 app-canvas browsers
 app-canvas --config canvas.config.mjs
