@@ -1,5 +1,41 @@
 # tomstack-skills
 
+## 0.4.0
+
+### Minor Changes
+
+- [`cb55e84`](https://github.com/tombelieber/tomstack/commit/cb55e84ee9c838f3af8228dbabb43191f1d27ac2) Thanks [@tombelieber](https://github.com/tombelieber)! - Restore full source-rendered UI in App Canvas overview and state graph, with a compact landscape toolbar, collapsible navigation and details. Document render-only DOM previews, real app interactions and live-renderer fallback limits; pin the shared tool to v0.6.0.
+
+- [`b9a9fc7`](https://github.com/tombelieber/tomstack/commit/b9a9fc7f5f2446dd333c7ec4a2ef8546c3f3f70c) Thanks [@tombelieber](https://github.com/tombelieber)! - Add App Canvas integration and maintenance guidance for real application pages, states and interactive flows, with synthetic dependency boundaries and explicit coverage checks.
+
+### Patch Changes
+
+- [`36e91ec`](https://github.com/tombelieber/tomstack/commit/36e91ec734337f919c7fe16ad7c00397f8070947) Thanks [@tombelieber](https://github.com/tombelieber)! - Pin App Canvas v0.6.1 and require offscreen preview release during active viewport gestures, with repeated maximum-zoom checks alongside the running-app budget.
+
+- [`85b3a3b`](https://github.com/tombelieber/tomstack/commit/85b3a3bb66f672f25388d0c4ae230c16862849db) Thanks [@tombelieber](https://github.com/tombelieber)! - Pin App Canvas v0.5.1 and require cached-project compatibility plus a single continuing playback instance alongside retained drafts.
+
+- [`f443aa7`](https://github.com/tombelieber/tomstack/commit/f443aa73ffe35b3ecc667505fc531be648a36858) Thanks [@tombelieber](https://github.com/tombelieber)! - Update App Canvas guidance for v0.4.2: complete checked case coverage, expandable branching state graphs and whole-set playback with isolated per-flow sessions.
+
+  Wait for asynchronously replaced forms before continuing file-driven journeys.
+
+- [`df00a09`](https://github.com/tombelieber/tomstack/commit/df00a095cf35a19cc5de811fc5732bbea959f363) Thanks [@tombelieber](https://github.com/tombelieber)! - Connect App Canvas to its public interactive demo and agent-neutral integration guide, with a runnable React/Vite reference, explicit coverage evidence and synthetic static-export boundaries.
+
+- [#18](https://github.com/tombelieber/tomstack/pull/18) [`8e7b402`](https://github.com/tombelieber/tomstack/commit/8e7b402e98c5c4ebc3414446492344645f0a9390) Thanks [@tombelieber](https://github.com/tombelieber)! - Require agent-owned complete UI population with independent source inventories,
+  explicit unresolved states and verification gates. Add original-runtime native
+  capture/harness guidance for UIKit, SwiftUI, Android Views/Compose and React Native.
+
+- [`092f317`](https://github.com/tombelieber/tomstack/commit/092f317fb4f88cc86b8583d39d88ba3356241890) Thanks [@tombelieber](https://github.com/tombelieber)! - Update App Canvas to v0.5.0 with page/feature/state navigation, explicit touch interaction modes, panel preferences, bounded live previews and retained-draft verification.
+
+- [#18](https://github.com/tombelieber/tomstack/pull/18) [`a3e5146`](https://github.com/tombelieber/tomstack/commit/a3e51464e1533a2fd467e33227a09f7bd7e279a0) Thanks [@tombelieber](https://github.com/tombelieber)! - Pin App Canvas v0.7.0 for complete-population inventory checks and native UI
+  harness guidance. Restore strict marketplace validation with a backward rename
+  from claude-backup to backup, keeping its source and component namespace, and
+  retain shared repository context at .claude/CLAUDE.md.
+
+- [`aedc164`](https://github.com/tombelieber/tomstack/commit/aedc16405479b82a8ef16b659ed7f56c7f80d7be) Thanks [@tombelieber](https://github.com/tombelieber)! - Update App Canvas guidance for simultaneous real-code frames, destination
+  camera navigation, fixture isolation and checked journey playback in v0.3.0.
+
+- [`b3ec9dd`](https://github.com/tombelieber/tomstack/commit/b3ec9ddda48494c7a08a46d94d2e9d1bb7e6b45a) Thanks [@tombelieber](https://github.com/tombelieber)! - Keep skill discovery descriptions concise and front-load the supported task and decision boundary. Preserve invocation policy and operating contracts.
+
 ## 0.3.0
 
 ### Minor Changes
