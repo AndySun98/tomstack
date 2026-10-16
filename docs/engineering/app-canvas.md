@@ -10,7 +10,7 @@ installing anything. To connect another app, give its coding agent the
 The guide is agent-neutral; the optional skill installer supports Codex and Claude.
 
 ```sh
-npm install -g github:tombelieber/app-canvas#v0.3.0
+npm install -g github:tombelieber/app-canvas#v0.4.0
 app-canvas install --target both
 app-canvas browsers
 app-canvas --config canvas.config.mjs
@@ -23,3 +23,11 @@ interaction and isolated preview storage. Flow links select and zoom to the
 destination. Checked journeys play happy, failure and recovery paths in one
 continuing session; pause, single-step and replay make the flow inspectable.
 Measure the target application's frame cost; the demo verifies 77 cases.
+
+The state graph combines all declared branches and checked transitions with
+success/failure/waiting labels. Select a compact node to expand its real UI.
+The demo has 44 interaction flows and independent playback for every one of
+its 77 cases, with whole-set queue playback. Set complete-case and connected
+graph guards so a newly registered state cannot silently miss its playback.
+Declare fixture conditions explicitly; a login boundary or read-only variant
+does not need an invented button-driven transition.
