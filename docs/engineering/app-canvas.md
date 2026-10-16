@@ -10,7 +10,7 @@ installing anything. To connect another app, give its coding agent the
 The guide is agent-neutral; the optional skill installer supports Codex and Claude.
 
 ```sh
-npm install -g github:tombelieber/app-canvas#v0.4.0
+npm install -g github:tombelieber/app-canvas#v0.4.1
 app-canvas install --target both
 app-canvas browsers
 app-canvas --config canvas.config.mjs
