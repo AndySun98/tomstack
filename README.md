@@ -86,10 +86,16 @@ bundled executable or hooks:
 
 ```bash
 claude plugin install orphan-reaper@tomstack
-claude plugin install claude-backup@tomstack
+claude plugin install backup@tomstack
 claude plugin install chatgpt-share-dump@tomstack
 claude plugin install pain-point-mining-agent@tomstack
 ```
+
+The backup listing is now `backup@tomstack`; its repository and
+`claude-backup` component namespace stay the same. The marketplace records
+`claude-backup` → `backup` in its rename history. After updating the marketplace,
+existing users can run `claude plugin install backup@tomstack` once to cache the
+new listing. No plugin removal or backup-data deletion is part of this change.
 
 ## Maintainer workflow
 

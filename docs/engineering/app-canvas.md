@@ -13,7 +13,7 @@ installing anything. To connect another app, give its coding agent the
 The guide is agent-neutral; the optional skill installer supports Codex and Claude.
 
 ```sh
-npm install -g github:tombelieber/app-canvas#v0.6.1
+npm install -g github:tombelieber/app-canvas#v0.7.0
 app-canvas install --target both
 app-canvas browsers
 app-canvas --config canvas.config.mjs
@@ -26,8 +26,7 @@ Semantic discovery and scope cross-checking remain the agent's responsibility.
 A representative subset or a passing self-selected catalog is not completion;
 blocked items remain counted and incomplete. Read the
 [completion contract](../../skills/engineering/app-canvas/references/completion.md).
-Use a verified tool revision exporting `@tombelieber/app-canvas/inventory` for
-that gate; the older install example above only establishes CLI/skill setup.
+The v0.7.0 tool exports `@tombelieber/app-canvas/inventory` for that gate.
 Preview mutations stay synthetic and do not authorize deployment or real
 provider operations.
 

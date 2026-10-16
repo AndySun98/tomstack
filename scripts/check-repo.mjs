@@ -189,8 +189,16 @@ if (JSON.stringify(manifestPaths) !== JSON.stringify(expectedPaths)) {
   );
 }
 
-for (const required of ["LICENSE", "AGENTS.md", "CLAUDE.md", "CHANGELOG.md"]) {
+for (const required of ["LICENSE", "AGENTS.md", ".claude/CLAUDE.md", "CHANGELOG.md"]) {
   if (!existsSync(join(repo, required))) fail(`missing ${required}`);
+}
+
+if (read(".claude/CLAUDE.md").trim() !== "@../AGENTS.md") {
+  fail("Claude project context must import the shared repository instructions");
+}
+if (marketplace.renames?.["claude-backup"] !== "backup" ||
+    !marketplace.plugins.some(entry => entry.name === "backup" && entry.source?.repo === "tombelieber/claude-backup")) {
+  fail("The backup entry must preserve its legacy rename and original source");
 }
 
 if (errors.length > 0) {
