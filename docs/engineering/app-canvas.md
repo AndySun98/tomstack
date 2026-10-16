@@ -13,7 +13,7 @@ installing anything. To connect another app, give its coding agent the
 The guide is agent-neutral; the optional skill installer supports Codex and Claude.
 
 ```sh
-npm install -g github:tombelieber/app-canvas#v0.7.0
+npm install -g github:tombelieber/app-canvas#v0.7.1
 app-canvas install --target both
 app-canvas browsers
 app-canvas --config canvas.config.mjs
@@ -54,3 +54,9 @@ Full original captures are valid visual surfaces with recorded source/build,
 fixture and device provenance. Native assertions and recapture checks run in
 the original runtime and connect to the canvas verification hook; viewer clicks
 are not native E2E. Existing previews or a React rewrite are not prerequisites.
+
+Compatible web overview states share one viewport-sized opaque sandbox with
+isolated source DOM trees. Native top-layer previews keep separate renderers.
+Verify total browsing contexts, source-DOM reuse and maximum zoom; the running
+app budget alone does not bound passive rendering. Physical Safari stability
+remains a separate device check.
