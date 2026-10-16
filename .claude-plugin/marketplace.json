@@ -4,6 +4,9 @@
     "name": "tombelieber"
   },
   "description": "Tom Tang's managed agent skills and standalone coding-agent tools.",
+  "renames": {
+    "claude-backup": "backup"
+  },
   "plugins": [
     {
       "name": "tomstack-skills",
@@ -11,7 +14,7 @@
       "description": "Tom Tang's maintained agent skills for engineering and product work"
     },
     {
-      "name": "claude-backup",
+      "name": "backup",
       "source": {
         "source": "github",
         "repo": "tombelieber/claude-backup"
