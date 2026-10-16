@@ -4,8 +4,13 @@ Use this skill to connect an application's actual pages and named states to one 
 
 The canvas engine lives in [tombelieber/app-canvas](https://github.com/tombelieber/app-canvas). This repository owns the canonical [skill](../../skills/engineering/app-canvas/SKILL.md); the standalone tool carries a compatibility snapshot for its installer.
 
+Try the [hosted StoolSense canvas](https://tombelieber.github.io/app-canvas/) without
+installing anything. To connect another app, give its coding agent the
+[integration guide](https://github.com/tombelieber/app-canvas/blob/main/AGENT_GUIDE.md).
+The guide is agent-neutral; the optional skill installer supports Codex and Claude.
+
 ```sh
-npm install -g github:tombelieber/app-canvas#v0.1.1
+npm install -g github:tombelieber/app-canvas#v0.2.0
 app-canvas install --target both
 app-canvas browsers
 app-canvas --config canvas.config.mjs
