@@ -19,7 +19,7 @@ app-canvas --config canvas.config.mjs
 The integration keeps real components and CSS. Projects maintain catalogs, fixtures and preview adapters rather than a separate design implementation. New states need registration; route and interaction checks make missing coverage visible. Preview mutations stay synthetic and do not authorize application deployment or real provider operations.
 
 Every named screen shows full source-rendered HTML/CSS without summary cards.
-Script-free DOM previews avoid starting every app; selection and playback use
+Render-only DOM previews avoid starting every app; selection and playback use
 the original HTML/CSS/JS with isolated preview storage. A compact toolbar and
 collapsible left/right sidebars preserve iPad landscape space. Unsupported drawing/embedded content retains live rendering and needs
 its own resource checks. Flow links select and zoom to the
