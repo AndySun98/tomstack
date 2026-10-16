@@ -1,6 +1,9 @@
 # App Canvas
 
-Use this skill to connect an application's actual pages and named states to one interactive canvas, with source updates, synthetic data and checked user flows.
+Use this skill to have a coding agent discover and populate an application's
+complete UI landscape: screens, components, variants, states and navigation.
+The agent prepares missing fixtures, previews and render harnesses itself;
+the user does not need to supply a screen list or ask repeatedly for the rest.
 
 The canvas engine lives in [tombelieber/app-canvas](https://github.com/tombelieber/app-canvas). This repository owns the canonical [skill](../../skills/engineering/app-canvas/SKILL.md); the standalone tool carries a compatibility snapshot for its installer.
 
@@ -16,9 +19,19 @@ app-canvas browsers
 app-canvas --config canvas.config.mjs
 ```
 
-The integration keeps real components and CSS. Projects maintain catalogs, fixtures and preview adapters rather than a separate design implementation. New states need registration; route and interaction checks make missing coverage visible. Preview mutations stay synthetic and do not authorize application deployment or real provider operations.
+The integration uses original UI code. Projects maintain an independent source
+inventory, catalog, fixtures and adapters. A new source-inventory gate checks
+file freshness and item/case mappings alongside route and playable-case checks.
+Semantic discovery and scope cross-checking remain the agent's responsibility.
+A representative subset or a passing self-selected catalog is not completion;
+blocked items remain counted and incomplete. Read the
+[completion contract](../../skills/engineering/app-canvas/references/completion.md).
+Use a verified tool revision exporting `@tombelieber/app-canvas/inventory` for
+that gate; the older install example above only establishes CLI/skill setup.
+Preview mutations stay synthetic and do not authorize deployment or real
+provider operations.
 
-Every named screen shows full source-rendered HTML/CSS without summary cards.
+Web screens show full source-rendered HTML/CSS without summary cards.
 Render-only DOM previews avoid starting every app; selection and playback use
 the original HTML/CSS/JS with isolated preview storage. A compact toolbar and
 collapsible left/right sidebars preserve iPad landscape space. Unsupported drawing/embedded content retains live rendering and needs
@@ -34,3 +47,11 @@ its 77 cases, with whole-set queue playback. Set complete-case and connected
 graph guards so a newly registered state cannot silently miss its playback.
 Declare fixture conditions explicitly; a login boundary or read-only variant
 does not need an invented button-driven transition.
+
+Native UIKit/storyboard, SwiftUI, Android Views/Compose and React Native
+repositories use agent-authored native harnesses and captures or a verified
+device adapter, following the [native workflow](../../skills/engineering/app-canvas/references/native.md).
+Full original captures are valid visual surfaces with recorded source/build,
+fixture and device provenance. Native assertions and recapture checks run in
+the original runtime and connect to the canvas verification hook; viewer clicks
+are not native E2E. Existing previews or a React rewrite are not prerequisites.
