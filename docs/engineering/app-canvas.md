@@ -1,62 +1,36 @@
-# App Canvas
+# App Canvas has moved to its standalone repository
 
-Use this skill to have a coding agent discover and populate an application's
-complete UI landscape: screens, components, variants, states and navigation.
-The agent prepares missing fixtures, previews and render harnesses itself;
-the user does not need to supply a screen list or ask repeatedly for the rest.
+[App Canvas](https://github.com/tombelieber/app-canvas) owns its canvas, CLI,
+canonical [skill](https://github.com/tombelieber/app-canvas/tree/main/skills/app-canvas),
+completion/native references, marketplace and releases. Tomstack no longer
+bundles or maintains a copy. No Tomstack installation is required to use it.
 
-The canvas engine lives in [tombelieber/app-canvas](https://github.com/tombelieber/app-canvas). This repository owns the canonical [skill](../../skills/engineering/app-canvas/SKILL.md); the standalone tool carries a compatibility snapshot for its installer.
+## Migrate before updating an older Tomstack bundle
 
-Try the [hosted StoolSense canvas](https://tombelieber.github.io/app-canvas/) without
-installing anything. To connect another app, give its coding agent the
-[integration guide](https://github.com/tombelieber/app-canvas/blob/main/AGENT_GUIDE.md).
-The guide is agent-neutral; the optional skill installer supports Codex and Claude.
+For the Claude bundle, install the standalone skill first:
 
 ```sh
-npm install -g github:tombelieber/app-canvas#v0.7.1
-app-canvas install --target both
-app-canvas browsers
-app-canvas --config canvas.config.mjs
+claude plugin marketplace add tombelieber/app-canvas
+claude plugin install app-canvas@app-canvas
 ```
 
-The integration uses original UI code. Projects maintain an independent source
-inventory, catalog, fixtures and adapters. A new source-inventory gate checks
-file freshness and item/case mappings alongside route and playable-case checks.
-Semantic discovery and scope cross-checking remain the agent's responsibility.
-A representative subset or a passing self-selected catalog is not completion;
-blocked items remain counted and incomplete. Read the
-[completion contract](../../skills/engineering/app-canvas/references/completion.md).
-The v0.7.0 tool exports `@tombelieber/app-canvas/inventory` for that gate.
-Preview mutations stay synthetic and do not authorize deployment or real
-provider operations.
+Then update the Tomstack bundle as usual; it retains the other promoted skills.
+The standalone plugin supplies the skill. Install the App Canvas CLI separately
+as documented in the [current installation guide](https://github.com/tombelieber/app-canvas#connect-a-project).
 
-Web screens show full source-rendered HTML/CSS without summary cards.
-Render-only DOM previews avoid starting every app; selection and playback use
-the original HTML/CSS/JS with isolated preview storage. A compact toolbar and
-collapsible left/right sidebars preserve iPad landscape space. Unsupported drawing/embedded content retains live rendering and needs
-its own resource checks. Flow links select and zoom to the
-destination. Checked journeys play happy, failure and recovery paths in one
-continuing session; pause, single-step and replay make the flow inspectable.
-Measure the target application's frame cost; the demo verifies 77 cases.
+For a Codex or other agent skill installed with `skills`, select the same target
+agents from the new source:
 
-The state graph combines all declared branches and checked transitions with
-success/failure/waiting labels. Every graph node shows its full real UI.
-The demo has 44 interaction flows and independent playback for every one of
-its 77 cases, with whole-set queue playback. Set complete-case and connected
-graph guards so a newly registered state cannot silently miss its playback.
-Declare fixture conditions explicitly; a login boundary or read-only variant
-does not need an invented button-driven transition.
+```sh
+npx skills@latest add tombelieber/app-canvas --skill app-canvas
+```
 
-Native UIKit/storyboard, SwiftUI, Android Views/Compose and React Native
-repositories use agent-authored native harnesses and captures or a verified
-device adapter, following the [native workflow](../../skills/engineering/app-canvas/references/native.md).
-Full original captures are valid visual surfaces with recorded source/build,
-fixture and device provenance. Native assertions and recapture checks run in
-the original runtime and connect to the canvas verification hook; viewer clicks
-are not native E2E. Existing previews or a React rewrite are not prerequisites.
+For CLI-managed copies, update the CLI and run `app-canvas install --target both`.
+Preserve a manually copied or locally linked skill before installing: the CLI
+refuses to overwrite unmanaged or locally edited files. Choose one Claude skill
+installation route to avoid duplicates.
 
-Compatible web overview states share one viewport-sized opaque sandbox with
-isolated source DOM trees. Native top-layer previews keep separate renderers.
-Verify total browsing contexts, source-DOM reuse and maximum zoom; the running
-app budget alone does not bound passive rendering. Physical Safari stability
-remains a separate device check.
+The legacy `app-canvas@tomstack` marketplace entry still points directly to the
+standalone repository for existing installations. New users can use
+`app-canvas@app-canvas` independently. Future skill changes and releases happen
+only in App Canvas; Tomstack's listing is for discovery and compatibility.

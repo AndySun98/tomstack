@@ -1,4 +1,0 @@
-interface:
-  display_name: "App Canvas"
-  short_description: "Populate a complete web or native UI landscape"
-  default_prompt: "Use $app-canvas to discover and populate this repository's complete UI landscape, including components, variants, states and navigation. Create missing fixtures and render harnesses, reconcile the source inventory and verify all required cases before calling it complete."

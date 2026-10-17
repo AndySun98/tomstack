@@ -46,7 +46,6 @@ npx skills@latest update <name>
 **Model-invoked**
 
 - **[batch-grill-me](./skills/engineering/batch-grill-me/SKILL.md):** Clarify consequential goal and spec decisions together before implementation.
-- **[app-canvas](./skills/engineering/app-canvas/SKILL.md):** Review real app pages, states and flows on one shared canvas.
 - **[impact-aware-qa](./skills/engineering/impact-aware-qa/SKILL.md):** Choose the smallest sufficient repository verification without losing correctness.
 
 ### Productivity
@@ -78,7 +77,7 @@ more than a skill:
 | [claude-backup](https://github.com/tombelieber/claude-backup) | Claude marketplace, npm | Claude Code backup and restore CLI |
 | [chatgpt-share-dump](https://github.com/tombelieber/chatgpt-share-dump) | Claude marketplace, GitHub | ChatGPT share archive CLI |
 | [pain-point-mining-agent](https://github.com/tombelieber/pain-point-mining-agent) | Claude marketplace, GitHub | Product-signal mining workflow |
-| [app-canvas](https://github.com/tombelieber/app-canvas) | GitHub CLI, Claude marketplace | Real app pages, states and flows on one canvas |
+| [app-canvas](https://github.com/tombelieber/app-canvas) | GitHub CLI, its own Claude marketplace | Complete UI landscape for web and native apps; canonical skill and releases maintained independently |
 | [orphan-reaper](./orphan-reaper/) | Claude marketplace, npm | Orphan development-process cleanup CLI |
 
 Install individual plugins from the same marketplace when you need their
@@ -96,6 +95,13 @@ The backup listing is now `backup@tomstack`; its repository and
 `claude-backup` → `backup` in its rename history. After updating the marketplace,
 existing users can run `claude plugin install backup@tomstack` once to cache the
 new listing. No plugin removal or backup-data deletion is part of this change.
+
+App Canvas now owns its canonical skill and releases in its standalone
+repository; it is no longer included in `tomstack-skills`. Before updating an
+older Tomstack bundle, follow the [App Canvas migration guide](docs/engineering/app-canvas.md)
+to install its standalone skill. The existing `app-canvas@tomstack` marketplace
+listing remains a direct link to that repository for compatibility; new users
+can install `app-canvas@app-canvas` without Tomstack.
 
 ## Maintainer workflow
 

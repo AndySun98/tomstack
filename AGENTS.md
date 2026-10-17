@@ -4,6 +4,11 @@ This repository is the canonical source for Tom Tang's reusable agent skills.
 Standalone tool repositories may keep compatibility snapshots for their own
 installers, but new reusable skill work starts here.
 
+App Canvas is an independent product and an exception to this ownership rule.
+Its canonical skill, references, CLI and releases live together in
+`tombelieber/app-canvas`. Keep only discovery links and migration guidance here;
+do not reintroduce it into the Tomstack skill bundle or require a paired release.
+
 Read [docs/SOURCES.md](./docs/SOURCES.md) before changing a migrated skill. It
 records the former one-skill repository and any product-specific compatibility
 snapshot that still exists.
