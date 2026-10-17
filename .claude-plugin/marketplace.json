@@ -45,8 +45,8 @@
     {
       "name": "app-canvas",
       "source": {
-        "source": "github",
-        "repo": "tombelieber/app-canvas"
+        "source": "url",
+        "url": "https://github.com/tombelieber/app-canvas.git"
       },
       "description": "Interactive overview of real application pages, states and flows"
     }

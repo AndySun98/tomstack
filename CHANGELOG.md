@@ -1,5 +1,17 @@
 # tomstack-skills
 
+## 0.5.0
+
+### Minor Changes
+
+- [`0200bd1`](https://github.com/tombelieber/tomstack/commit/0200bd1c7e805a4a552f39428ef33b9c46c88407) Thanks [@tombelieber](https://github.com/tombelieber)! - Move App Canvas's canonical skill and release ownership to `tombelieber/app-canvas`.
+  Remove its duplicate from the Tomstack bundle, retain the legacy marketplace
+  link, and document installing the independent skill before updating the bundle.
+  The complete-population, native and shared-rendering guidance is maintained
+  with the standalone CLI rather than released twice.
+  Keep the legacy marketplace link on HTTPS so public installs do not require
+  an SSH identity.
+
 ## 0.4.0
 
 ### Minor Changes
