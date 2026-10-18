@@ -31,7 +31,7 @@ and copied Claude skills creates duplicates, so use one Claude route.
 Install or update one skill:
 
 ```bash
-npx skills@latest add tombelieber/tomstack --skill=<name>
+npx skills@latest add tombelieber/tomstack --skill <name>
 npx skills@latest update <name>
 ```
 

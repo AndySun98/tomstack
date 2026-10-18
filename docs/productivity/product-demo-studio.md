@@ -19,7 +19,7 @@ differences, then proceeds through production, review and selected revisions.
 Codex and other compatible agents can install the skill from this repository:
 
 ```bash
-npx skills@latest add tombelieber/tomstack --skill=product-demo-studio
+npx skills@latest add tombelieber/tomstack --skill product-demo-studio
 ```
 
 Claude Code users can use the managed `tomstack-skills@tomstack` plugin.
