@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "source_research_date": "2026-10-17",
+  "workflows": [
+    {
+      "id": "C01",
+      "slug": "guizang",
+      "name": "Guizang",
+      "url": "https://github.com/op7418/guizang-product-video-skill.git",
+      "commit": "18842e0f49a9eb2b8c00cc065ec37b314e235aaa",
+      "entrypoints": [
+        "SKILL.md"
+      ]
+    },
+    {
+      "id": "C02",
+      "slug": "hyperframes",
+      "name": "HyperFrames",
+      "url": "https://github.com/heygen-com/hyperframes.git",
+      "commit": "09c0307c3fd0318a7ea77e6b41df4e5d30a1902b",
+      "entrypoints": [
+        "skills/product-launch-video/SKILL.md",
+        "skills/hyperframes-cli/SKILL.md"
+      ]
+    },
+    {
+      "id": "C03",
+      "slug": "remotion-skills",
+      "name": "Remotion official",
+      "url": "https://github.com/remotion-dev/skills.git",
+      "commit": "1441a11e95db35443bd76bb318386c0d3ca00053",
+      "entrypoints": [
+        "skills/remotion-best-practices/SKILL.md",
+        "skills/remotion-render/SKILL.md"
+      ]
+    },
+    {
+      "id": "C04",
+      "slug": "shotcraft",
+      "name": "Video Shotcraft",
+      "url": "https://github.com/Vincentwei1021/video-shotcraft.git",
+      "commit": "310330cadcf41f5d2b15ee1c908d629e26d0a324",
+      "entrypoints": [
+        "SKILL.md"
+      ]
+    },
+    {
+      "id": "C05",
+      "slug": "testreel",
+      "name": "Testreel",
+      "url": "https://github.com/greentfrapp/testreel.git",
+      "commit": "6b685f10ec85ce5ac2fb41f84cd04d83f124f560",
+      "entrypoints": [
+        "README.md",
+        "docs/recording-definitions.md"
+      ]
+    },
+    {
+      "id": "C06",
+      "slug": "product-launch-motion",
+      "name": "Product Launch Motion v2",
+      "url": "https://github.com/AbubakrChan/product-launch-motion.git",
+      "commit": "b25b1630ecdebfe1fccf513256b2e7b8fd91a2c2",
+      "entrypoints": [
+        "SKILL.md"
+      ]
+    },
+    {
+      "id": "C07",
+      "slug": "claude-motion",
+      "name": "claude-motion community",
+      "url": "https://github.com/whaleyxbt/claude-motion.git",
+      "commit": "e627941543d9988b155dc610bb9cc0115a5e365e",
+      "entrypoints": [
+        ".claude/skills/motion-design/SKILL.md",
+        ".claude/skills/sound-design/SKILL.md"
+      ]
+    }
+  ]
+}

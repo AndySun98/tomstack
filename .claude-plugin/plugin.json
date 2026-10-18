@@ -24,6 +24,7 @@
     "./skills/productivity/chatgpt-share-dump",
     "./skills/productivity/cleanup",
     "./skills/productivity/first-principles-xy-problems",
-    "./skills/productivity/pain-point-mining"
+    "./skills/productivity/pain-point-mining",
+    "./skills/productivity/product-demo-studio"
   ]
 }
