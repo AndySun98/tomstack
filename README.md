@@ -60,6 +60,7 @@ npx skills@latest update <name>
 - **[chatgpt-share-dump](./skills/productivity/chatgpt-share-dump/SKILL.md):** Archive ChatGPT share links into agent-readable context.
 - **[cleanup](./skills/productivity/cleanup/SKILL.md):** Find and clean orphaned development processes safely.
 - **[pain-point-mining](./skills/productivity/pain-point-mining/SKILL.md):** Turn real interaction history into ranked product pain points and requirements.
+- **[product-demo-studio](./skills/productivity/product-demo-studio/SKILL.md):** Interview for demo specs, build a batch, review alternatives, and polish the selected demo.
 
 Draft, retained, and retired skills live in `skills/in-progress`, `skills/misc`,
 and `skills/deprecated`; they are not shipped in the managed plugin.

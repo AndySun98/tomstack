@@ -15,6 +15,7 @@ install path.
 | `cleanup` | `skills/productivity/cleanup` | `orphan-reaper/skills/cleanup` remains a product-plugin compatibility snapshot until the CLI is extracted from this repository |
 | `first-principles-xy-problems` | `skills/productivity/first-principles-xy-problems` | Migrated from the former local-only Codex skill |
 | `pain-point-mining` | `skills/productivity/pain-point-mining` | [`tombelieber/pain-point-mining-agent`](https://github.com/tombelieber/pain-point-mining-agent) still owns its CLI installer and tracked distribution |
+| `product-demo-studio` | `skills/productivity/product-demo-studio` | New canonical skill; optional upstream video tools are pinned and loaded on demand |
 
 Edit reusable decision logic in Tomstack first. Product repositories own
 runtime implementation and may keep narrowly adapted skill snapshots while

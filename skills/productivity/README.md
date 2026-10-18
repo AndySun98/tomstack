@@ -12,3 +12,5 @@ Promoted skills for product work and coding-agent operations.
 - **[chatgpt-share-dump](./chatgpt-share-dump/SKILL.md):** Archive ChatGPT share links into agent-readable context.
 - **[cleanup](./cleanup/SKILL.md):** Find and clean orphaned development processes safely.
 - **[pain-point-mining](./pain-point-mining/SKILL.md):** Turn real interaction history into ranked product pain points and requirements.
+
+- **[product-demo-studio](./product-demo-studio/SKILL.md):** Interview for demo specs, build a batch, review alternatives, and polish a selected demo.

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Product Demo Studio"
+  short_description: "Interview, batch demos, review, then polish a chosen cut"
+  default_prompt: "Use $product-demo-studio to interview me for the exact specs, create an agreed demo batch, let me review, then polish my chosen demo."

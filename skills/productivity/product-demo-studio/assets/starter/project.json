@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "approved": false,
+  "product": {
+    "name": "",
+    "audience": "",
+    "goal": "",
+    "cta": "",
+    "cta_url": "",
+    "brand": {}
+  },
+  "locales": [],
+  "variants": [],
+  "formats": [],
+  "scenes": [],
+  "recordings": {},
+  "audio": {},
+  "delivery": {}
+}
