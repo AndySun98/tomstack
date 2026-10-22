@@ -1,0 +1,4 @@
+interface:
+  display_name: "Claude Clean Reborn"
+  short_description: "Guide scoped Claude cleanup and verify local readiness"
+  default_prompt: "Use $claude-clean-reborn to inspect my Claude apps and browser profiles, preview any deletion, then guide and verify the cleanup while preserving Keychain and unrelated data."

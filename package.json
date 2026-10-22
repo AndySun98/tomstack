@@ -22,9 +22,10 @@
     "changeset": "changeset",
     "version": "changeset version && node scripts/sync-plugin-version.mjs",
     "check-plugin-version": "node scripts/sync-plugin-version.mjs --check",
-    "check": "npm run test:auto-pilot && npm run test:impact-aware-qa && node scripts/check-repo.mjs && npm run pack:dry",
+    "check": "npm run test:auto-pilot && npm run test:impact-aware-qa && npm run test:claude-clean-reborn && node scripts/check-repo.mjs && npm run pack:dry",
     "test:auto-pilot": "node --test legacy/auto-pilot/tests/receipt-validator.test.mjs",
     "test:impact-aware-qa": "node --test skills/engineering/impact-aware-qa/tests/receipt-v2.test.mjs",
+    "test:claude-clean-reborn": "python3 -B -m unittest discover -s skills/productivity/claude-clean-reborn/tests -v",
     "pack:dry": "npm pack --dry-run --json"
   },
   "devDependencies": {

@@ -13,6 +13,7 @@ install path.
 | `ui-mr-visual-review` | `skills/engineering/ui-mr-visual-review` | Promoted from the previously local-only Codex and Claude skill |
 | `backup` | `skills/productivity/backup` | [`tombelieber/claude-backup`](https://github.com/tombelieber/claude-backup) still owns the CLI, scheduler, npm package, and standalone Claude plugin |
 | `chatgpt-share-dump` | `skills/productivity/chatgpt-share-dump` | [`tombelieber/chatgpt-share-dump`](https://github.com/tombelieber/chatgpt-share-dump) still owns the CLI, tracked installer, and archive implementation |
+| `claude-clean-reborn` | `skills/productivity/claude-clean-reborn` | New canonical skill; guided cleanup and metadata-only audit, informed by primary vendor documentation and observed browser partition failures |
 | `cleanup` | `skills/productivity/cleanup` | `orphan-reaper/skills/cleanup` remains a product-plugin compatibility snapshot until the CLI is extracted from this repository |
 | `first-principles-xy-problems` | `skills/productivity/first-principles-xy-problems` | Migrated from the former local-only Codex skill |
 | `pain-point-mining` | `skills/productivity/pain-point-mining` | [`tombelieber/pain-point-mining-agent`](https://github.com/tombelieber/pain-point-mining-agent) still owns its CLI installer and tracked distribution |

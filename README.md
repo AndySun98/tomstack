@@ -59,6 +59,7 @@ npx skills@latest update <name>
 
 - **[backup](./skills/productivity/backup/SKILL.md):** Manage and restore Claude Code backups.
 - **[chatgpt-share-dump](./skills/productivity/chatgpt-share-dump/SKILL.md):** Archive ChatGPT share links into agent-readable context.
+- **[claude-clean-reborn](./skills/productivity/claude-clean-reborn/SKILL.md):** Guide selective Claude app/browser cleanup with deletion previews, verification and a team handoff.
 - **[cleanup](./skills/productivity/cleanup/SKILL.md):** Find and clean orphaned development processes safely.
 - **[pain-point-mining](./skills/productivity/pain-point-mining/SKILL.md):** Turn real interaction history into ranked product pain points and requirements.
 - **[product-demo-studio](./skills/productivity/product-demo-studio/SKILL.md):** Interview for demo specs, build a batch, review alternatives, and polish the selected demo.
@@ -106,6 +107,8 @@ listing remains a direct link to that repository for compatibility; new users
 can install `app-canvas@app-canvas` without Tomstack.
 
 ## Maintainer workflow
+
+Use Node.js/npm and Python 3.10+ (`python3`) for the repository checks.
 
 ```bash
 npm install
